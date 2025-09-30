@@ -44,8 +44,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         File f = new File("..");
         System.out.println(f.getPath());
-    #    System.out.println(f.getAbsolutePath());
-    #   System.out.println(f.getCanonicalPath());
+#        System.out.println(f.getAbsolutePath());
+#        System.out.println(f.getCanonicalPath());
     }
 }
 
@@ -75,8 +75,8 @@ public class Main {
         File f1 = new File("C:\\Windows");
         File f2 = new File("C:\\Windows\\notepad.exe");
         File f3 = new File("C:\\Windows\\nothing");
-#        System.out.println(f1.isFile());
- #       System.out.println(f1.isDirectory());
+#       System.out.println(f1.isFile());
+#       System.out.println(f1.isDirectory());
         System.out.println(f2.isFile());
         System.out.println(f2.isDirectory());
         System.out.println(f3.isFile());
@@ -161,15 +161,15 @@ import java.nio.file.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Path p1 = Paths.get(".", "project", "study"); // 构造一个Path对象
+#        Path p1 = Paths.get(".", "project", "study"); // 构造一个Path对象
         System.out.println(p1);
-        Path p2 = p1.toAbsolutePath(); // 转换为绝对路径
+#        Path p2 = p1.toAbsolutePath(); // 转换为绝对路径
         System.out.println(p2);
-        Path p3 = p2.normalize(); // 转换为规范路径
+#        Path p3 = p2.normalize(); // 转换为规范路径
         System.out.println(p3);
-        File f = p3.toFile(); // 转换为File对象
+#        File f = p3.toFile(); // 转换为File对象
         System.out.println(f);
-        for (Path p : Paths.get("..").toAbsolutePath()) { // 可以直接遍历Path
+#        for (Path p : Paths.get("..").toAbsolutePath()) { // 可以直接遍历Path
             System.out.println("  " + p);
         }
     }
